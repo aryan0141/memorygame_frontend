@@ -1,15 +1,14 @@
 # MemoryGame
 > A web app for a memory game using flipping cards
 
-## Tech Stack Used
+![alt text](https://github.com/aryan0141/memorygame_frontend/blob/master/bannerImg.png?raw=true)
 
+## Tech Stack Used
 > MERN stack
 1. MongoDB
 2. Express
 3. React
 4. NodeJs
-
-## Features 
 
 ### Authentication 
 1. Form Login/Signup added.
