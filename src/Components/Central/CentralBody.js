@@ -1,7 +1,7 @@
 import { Container, Grid } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import GameInfo from "./GameInfo";
-import FlipCard from "./SensorCards/FlipCard";
+import FlipCard from "./Cards/FlipCard";
 
 const ImgCards = [
   { src: "/card_images/apple.png" },
@@ -11,27 +11,6 @@ const ImgCards = [
   { src: "/card_images/people.png" },
   { src: "/card_images/planets.png" },
 ];
-
-// function checkExpiryOfToken() {
-//   const token = JSON.parse(localStorage.getItem("token"));
-//   fetch("/auth/getUser", {
-//     method: "GET",
-//     headers: {
-//       "Content-Type": "application/json",
-//       Authorization: `Bearer ${token}`,
-//     },
-//   })
-//     .then((resp) => resp.json())
-//     .then((data) => {
-//       if (data.code == "token_not_valid") {
-//         localStorage.clear();
-//       } else {
-//         console.log(data);
-//       }
-//       return data;
-//     });
-//   return true;
-// }
 
 const CentralBody = () => {
   const [cards, setCards] = useState([]);

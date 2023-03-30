@@ -1,0 +1,1 @@
+export const BACKEND_HOST_URL="https://memorygamebackend.onrender.com";

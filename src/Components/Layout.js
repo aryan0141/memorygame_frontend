@@ -20,6 +20,7 @@ import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router";
 import { SubjectOutlined } from "@material-ui/icons";
 import Leaderboard from "./Leaderboard/Leaderboard";
+import {BACKEND_HOST_URL} from "../config/default"
 
 const drawerWidth = 240;
 
@@ -55,7 +56,7 @@ function Layout(props) {
       navigate("/login", { replace: true });
     } else {
       const token = JSON.parse(localStorage.getItem("token"));
-      fetch("/auth/getUser", {
+      fetch(`${BACKEND_HOST_URL}/auth/getUser`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

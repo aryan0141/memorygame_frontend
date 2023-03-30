@@ -2,6 +2,7 @@ import { Button, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
+import {BACKEND_HOST_URL} from "../../config/default"
 
 const useStyles = makeStyles({
   infoCSS: {
@@ -31,7 +32,7 @@ const GameInfo = ({
     }
 
     const token = JSON.parse(localStorage.getItem("token"));
-    fetch("/leaderboard/addLeaderboard/", {
+    fetch(`${BACKEND_HOST_URL}/leaderboard/addLeaderboard/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

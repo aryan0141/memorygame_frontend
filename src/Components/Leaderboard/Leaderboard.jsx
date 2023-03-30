@@ -9,6 +9,7 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { Container, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import {BACKEND_HOST_URL} from "../../config/default"
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -45,7 +46,7 @@ export default function Leaderboard({ userDetails }) {
 
   function getLeaderboard() {
     const token = JSON.parse(localStorage.getItem("token"));
-    fetch("/leaderboard/getLeaderboard/", {
+    fetch(`${BACKEND_HOST_URL}/leaderboard/getLeaderboard/`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
