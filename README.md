@@ -3,6 +3,8 @@
 
 ![alt text](https://github.com/aryan0141/memorygame_frontend/blob/master/bannerImg.png?raw=true)
 
+#### Backend GitHub Url - [Memoory Game Backend](https://github.com/aryan0141/memorygame_backend)
+
 ## Tech Stack Used
 > MERN stack
 1. MongoDB
@@ -18,8 +20,6 @@
 1. User can play game. 
 2. User moves and time is being continously recorded. 
 3. They can submit their scores and see them on a leaderboard.
-
-Backend GitHub Url - [Memoory Game Backend](https://github.com/aryan0141/memorygame_backend)
 
 ### See Live 
 [https://memorygame44.netlify.app/](https://memorygame44.netlify.app/)
